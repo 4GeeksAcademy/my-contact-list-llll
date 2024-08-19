@@ -1,6 +1,5 @@
 import React, { useContext, useEffect } from "react";
 import { Context } from "../store/appContext";
-import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/index.css";
 import { ContactCard } from "../component/ContactCard";
 import { Navbar } from "../component/navbar";

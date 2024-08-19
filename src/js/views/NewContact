@@ -31,6 +31,10 @@ export const NewContact = () => {
         navigate("/")
     }
 
+    // useEffect(() => {
+    //     actions.getAllContacts();
+    // }, [])
+
     return (
         <React.Fragment>
             <NewContactNavbar />
