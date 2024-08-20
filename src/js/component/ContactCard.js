@@ -11,15 +11,12 @@ export const ContactCard = ({ name, address, phone, email, id }) => {
         actions.getAllContacts()
     }, [])
 
-    // const handleDeleteContact = (contactId) => {
-    //     actions.deleteContact(contactId)
-    // }
 
     return (
         <div className="container contact-card">
             <div className="row">
                 <div className="col-3">
-                    <img src="https://images.pexels.com/photos/96918/pexels-photo-96918.jpeg?cs=srgb&dl=flora-flores-fondo-de-pantalla-hd-96918.jpg&fm=jpg"
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/005/544/718/small_2x/profile-icon-design-free-vector.jpg"
                         className="rounded-circle" />
                 </div>
                 <div className="col-9">
@@ -56,28 +53,6 @@ export const ContactCard = ({ name, address, phone, email, id }) => {
                     </div>
                 </div>
             </div>
-            {/* <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" 
-            aria-hidden="true" style={{borderRadius: '15px'}}>
-				<div className="modal-dialog">
-					<div className="modal-content">
-						<div className="modal-header">
-							<h1 className="modal-title fs-5 name" id="exampleModalLabel">Delete contact?</h1>
-							<button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-						</div>
-						<div className="modal-body">
-							<span>Do you want to delete {name} contact?</span>
-						</div>
-						<div className="modal-footer">
-							<button type="button" className="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-							<button type="button" className="btn btn-outline-info"
-								onClick={() => {
-									handleDeleteContact()
-								}}
-								data-bs-dismiss="modal">Delete</button>
-						</div>
-					</div>
-				</div>
-			</div> */}
         </div>
     );
 };

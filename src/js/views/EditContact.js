@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Context } from "../store/appContext";
-import { NewContactNavbar } from "../component/NewContactNavbar";
+import { UseContact } from "../component/UseContact.js";
 
 export const EditContact = () => {
     const { store, actions } = useContext(Context);
@@ -38,7 +38,7 @@ export const EditContact = () => {
 
     return (
         <React.Fragment>
-            <NewContactNavbar />
+            <UseContact />
             <div className="container new-contact">
                 <form className="row g-3" onSubmit={handleSubmit}>
                     <div className="new-contact-title name text-center mb-4">
